@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^nous.*$ /index.php?path=/pages/noussommes.html [R=301,L]
+RewriteRule ^home.*$ /index.php?path=/pages/home.html [R=301,L]
+RewriteRule ^contact.*$ /index.php?path=/pages/contact.html [R=301,L]
+RewriteRule ^duel.*$ /index.php?path=/pages/projets/duel.html [R=301,L]
+RewriteRule ^tapiela.*$ /index.php?path=/pages/projets/tapiela.html [R=301,L]
+RewriteRule ^hibbbou.*$ /index.php?path=/pages/projets/hibbbou.html [R=301,L]
+RewriteRule ^accesculture.*$ /index.php?path=/pages/projets/accesculture.html [R=301,L]
+
+
+
+

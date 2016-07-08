@@ -1,0 +1,1471 @@
+* {
+	box-sizing: border-box;
+	color: white;
+	text-decoration: none;
+}
+
+body {
+	/*
+  margin:0;
+  padding:0;
+  background:  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)),url(img/home.png) no-repeat top fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari 
+  background-size: cover; /* version standardisée 
+  overflow: hidden;*/
+	background-color: #231f20;
+	position:relative;
+}
+
+main {
+	padding-top: 3%;
+	padding-bottom: 0%;
+	transition-property: top,bottom;
+    transition-duration: .6s;
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 2s;
+	top:0;
+	bottom:0;
+}
+
+#main{
+	 
+}
+.animatemain{
+	position:absolute!important;
+	top:50vh!important;
+	transition-property: top,bottom;
+    transition-duration: .6s;
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 2s;
+}
+.movebottom{
+	top:58vh!important;
+	
+}
+/****** HEADER.HTML**********/
+
+header {
+	width: 100vw;
+	position: fixed;
+	background: #231f20;
+	z-index: 100;
+	text-align: center
+}
+
+header ul {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5vw;
+	width: 100%;
+}
+
+header ul li {
+	width: 25%;
+	vertical-align: middle;
+	float: left;
+	position: relative!important;
+}
+
+header ul li a {
+	display: block;
+	vertical-align: middle;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: .1rem;
+	font-weight: 100;
+	color: #cec6c8;
+	text-decoration: none;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin: 0 10% 0 10%;
+}
+
+#headerfull img {
+	width: 5.3vw;
+}
+
+.minitruck {
+	opacity: .7;
+}
+
+.projectmenu {
+	position: absolute;
+	z-index: -1;
+	color: white;
+	margin: 0!important;
+	padding: 0!important;
+	display: block;
+	width: 100%;
+	opacity: 0;
+	text-align: left;
+	cursor: default;
+	visibility: hidden;
+}
+
+#hoverli {
+	display: block;
+}
+
+#hoverli a {
+	width: auto;
+}
+
+a:hover {
+	color: pink;
+}
+
+#hovera {
+	cursor: default;
+}
+
+.projectmenu a:hover {
+	color: pink;
+	background-color: black;
+}
+
+.projectmenu li {
+	color: white;
+	display: block!important;
+	width: 100%;
+	z-index: -1;
+}
+
+.projectmenu li a {
+	font-size: 1.3vw;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 10%;
+	padding-left: 30%;
+	background-color: #231f20;
+	height: auto;
+	z-index: -1;
+}
+
+#projectmenu li a:hover {
+	background-color: black !important;
+}
+
+.menuopen {
+	opacity: 1!important;
+	z-index: 1000;
+	cursor: pointer;
+	visibility: visible;
+}
+
+.menuopen a {
+	opacity: 1!important;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.menuopen li a {
+	opacity: 1!important;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+
+/**** ************************ HOME.HTML****************************/
+
+#fond {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	bottom: 0.1%;
+	opacity: 0.9;
+	overflow: hidden;
+}
+
+#fond img {
+	-webkit-filter: brightness(50%);
+	filter: brightness(50%);
+	position: absolute!important;
+	max-width: 150%;
+	bottom: 1%;
+	overflow: hidden;
+}
+
+#truckwrap {
+	position: relative;
+	overflow: hidden;
+}
+
+#truck {
+	max-width: 100%;
+	opacity: 1;
+	display: block;
+	overflow: hidden;
+}
+
+.entete {
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	z-index: 0;
+}
+
+.h1home {
+	font-size: 4.5vw;
+	text-align: center;
+	font-weight: bold;
+	text-align: center;
+	color: #cec6c8;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	padding-bottom: 1.5%;
+	font-weight: 100;
+}
+
+
+/**********FOOTER**********/
+
+footer p {
+	font-size: 1vw;
+	text-align: center;
+	font-weight: bold;
+	text-align: center;
+	color: #cec6c8;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	padding-bottom: 1.5%;
+	font-weight: 100;
+	padding-top: 1%;
+}
+
+footer {
+	padding-top: 1%;
+	background: none !important;
+}
+
+.community {
+	font-size: 2vw;
+	text-align: right;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.absolut {
+	position: absolute !important;
+	z-index: 2;
+	bottom: 18%;
+}
+
+.community i {
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.community a {
+	margin: 2%;
+}
+
+.fa-facebook-square {
+	color: #cec6c8;
+}
+
+i.fa-instagram {
+	color: #cec6c8;
+}
+
+i.fa-twitter-square {
+	color: #cec6c8;
+}
+
+.contact {
+	text-decoration: underline;
+	font-family: 'raleway';
+	font-weight: lighter;
+	font-size: 1rem;
+	padding-right: 1.5%;
+	padding-top: 1%;
+	color: #d3c2c5;
+}
+
+
+/*************************SECTIONS************/
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+
+.sun {
+	position: absolute;
+	z-index: -1;
+}
+
+h2 {
+	font-family: 'Alegreya Sans SC';
+	letter-spacing: .15rem;
+	color: grey;
+	font-size: 1.7rem;
+}
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 4vw;
+	padding-top: 8.5%;
+	padding-bottom: .5%;
+	color: white;
+}
+
+h1 p {
+	font-size: 3vw;
+}
+
+.pitch {
+	width: 37%;
+	float: left;
+	text-align: justify;
+	margin-left: 3%;
+	margin-top: 6%;
+	font-family: 'Alegreya Sans SC';
+	letter-spacing: .15rem;
+	line-height: 1.3rem;
+	color: white;
+}
+
+.info {
+	width: 60%;
+	float: right;
+	display: inline-block !important;
+	text-align: center;
+	margin-top: 6%;
+	font-family: 'Alegreya Sans SC';
+	letter-spacing: .15rem;
+	line-height: 1.3rem;
+	color: white;
+}
+
+.col {
+	float: left;
+	width: 24.5%;
+	padding-right: 2%;
+	color: white;
+}
+
+.info h3 {
+	font-family: 'Raleway';
+	font-size: .7rem;
+	color: grey;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.pitch h3 {
+	padding-bottom: 5%;
+	font-family: 'Raleway';
+	font-size: .7rem;
+	color: grey;
+	font-weight: lighter;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.info p {
+	margin-top: 14%;
+	color: white;
+}
+
+.info a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.computerpic {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3%;
+	padding-top: 6%;
+}
+
+.computerpic img {
+	width: 50%;
+	padding-top: 0%;
+}
+
+.computerpic2 img {
+	width: 30%;
+	padding-top: 1%;
+}
+
+.computerpic2 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 7%;
+}
+
+
+/***** NOUS SOMMES***/
+
+.titleus {
+	width: 100%;
+	text-align: center;
+	font-size: 2.7rem;
+	margin-top: 5%;
+}
+
+.titleus h1 {
+	font-family: 'montserrat';
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+	padding-top: 0%;
+}
+
+.titleus h2 {
+	font-family: 'Dancing Script', cursive;
+	padding-top: 1%;
+	font-weight: 400;
+}
+
+.introus {
+	width: 38%;
+	margin-left: 31%;
+	font-family: 'Alegreya Sans SC';
+	font-size: 2rem;
+	font-weight: lighter;
+	line-height: 2rem;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.infous {
+	width: 50%;
+	margin-top: 7%;
+	display: flex;
+	margin-left: 25%;
+}
+
+.icon {
+	float: left;
+	width: 20%;
+	transition: 1s;
+	align-items: center;
+	margin: auto;
+	z-index: 0;
+}
+
+.icon img {
+	width: 66%;
+	opacity: .7;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-left: 17%;
+	margin-right: 17%;
+}
+
+.icon:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotateZ(260deg);
+}
+
+
+/********** name equipe *********/
+
+#team {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 7%;
+	text-align: center;
+	padding-bottom: 20%;
+}
+
+#team article {
+	display: inline-block;
+	width: 45%;
+	padding: 0 0% 0 0%;
+	vertical-align: top;
+	height: 40vh;
+}
+
+.ocupation {
+	margin-left: 0%;
+	font-family: 'Alegreya Sans SC';
+	font-size: 2vw;
+	font-weight: lighter;
+	line-height: 2rem;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 7%;
+}
+
+.picture {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	width: 40%;
+	margin: auto;
+}
+
+.picture img {
+	transition: 1s !important;
+	position: absolute;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	bottom: 0%;
+	top: 0%;
+	right: 0%;
+	left: 0%;
+}
+
+.hidden {
+	transition: 1s !important;
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+}
+
+.shown {
+	position: absolute;
+	width: 100%;
+	transition: 1s !important;
+}
+
+.picture:hover > .hidden {
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	opacity: 1;
+}
+
+.picture:hover > a .hidden {
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	opacity: 1;
+}
+
+.shown:hover {
+	opacity: 0;
+}
+
+
+/******** mobile equipe ********/
+
+@media (max-width: 1024px) {
+   
+.picture {
+	height: 80%;
+}
+    
+    .introus {
+	width: 60%;
+	margin-left: 20%;
+    }
+    
+    #team {
+    padding-bottom: 7%;
+}
+
+}
+
+@media (max-width: 800px) {
+   
+.picture {
+	height: 60%;
+	}
+ .introus {
+	width: 80%;
+	margin-left: 10%;
+    font-size: 2.5rem;
+    }
+     #team {
+    padding-bottom: 7%;
+}
+	
+	/******** contact ********/
+	
+	#contactform textarea {
+
+    margin-left: 20%!important;
+    margin-right: 20%!important;
+    margin-top: 4%;
+    width: 60%!important;
+    padding-left: 0%;
+}
+	
+	#contactform input {
+    margin-left: 20%!important;
+	margin-right: 20%!important;
+    width: 60%!important;
+    padding-top: .5%;
+    padding-bottom: .5%;
+	
+
+}
+	
+	#titlecontact {
+    font-size: 2rem !important;
+    padding-top: 10% !important;
+}
+	
+	
+	
+	
+	#team article {
+	height: 50vh !important;
+		width: 90% !important;
+   
+	}
+	.infous {
+    width: 80%;
+    margin-left: 10%;
+}
+	.ocupation {
+	font-size: 5vw;
+	line-height: 2rem !important;
+	
+}
+	.community {
+    font-size: 4.3vw !important;
+	}
+	
+	.title h1{
+		font-size: 3rem;
+	}
+	.pitch {
+		width: 80%;
+		margin-left: 10%;
+		float: none;
+		text-align: center;
+    font-family: 'Alegreya Sans SC';
+    letter-spacing: .15rem;
+    line-height: 2.2rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+	.info {
+		width: 90% !important;
+		margin-left: 5% !important;
+		float: none;
+		display: inline-block !important;
+		font-size: 2rem;
+		 line-height: 2rem;
+		font-weight: lighter;
+	}
+	
+	.info p{
+		margin-top: 5% !important;
+		margin-bottom: 7%;
+	}
+	.col{
+		width: 50%;
+	
+	}
+	.computerpic img {
+    width: 70%;
+    padding-top: 0%;
+}
+	.computerpic2 img {
+    width: 42%;
+    
+}
+	footer p {
+		font-size: 3vw !important;
+	    padding-top: 2%;
+	}
+
+	
+	}
+ @media screen and (min-width: 500px) and  (max-width: 667px) {
+   
+#team article {
+	height: 119vh !important;
+		
+	width: 90% !important;
+   
+	}
+      #team {
+    padding-bottom: 7%;
+}
+	 .introus {
+	width: 80%;
+	margin-left: 10%;
+    font-size: 2rem;
+    }
+	 
+	 #contactform textarea {
+
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-top: 4%;
+    width: 80% !important;
+    padding-left: 0%;
+}
+	
+	#contactform input {
+    margin-left: 10% !important;
+	margin-right: 10% !important;
+    width: 80% !important;
+    padding-top: .5%;
+    padding-bottom: .5%;
+	
+
+}
+	 
+	 #titlecontact {
+    font-size: 1.6rem !important;
+    padding-top: 10% !important;
+}
+	 
+	 .ocupation {
+	font-size: 4vw;
+	line-height: 2rem !important;
+	
+}
+.col{
+  float: left;
+  width: 50% !important ;
+  padding-right: 2.5% !important;
+ display: inline-block !important;
+
+  
+
+}
+	 .info{
+  width: 90% !important;
+  display: inline-block !important;
+  margin-left: 5%;
+    text-align: center !important;
+    font-size: 1.2rem !important;
+      float: none!important;
+       margin-top: 0%;
+  
+}
+
+	 .info p {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+}
+	.info h3{
+	font-size: 0.5rem;
+	}
+	 .pitch p {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+}
+	.pitch h3{
+		font-size: 1rem;
+	}
+	 .computerpic img{
+  width: 90%;
+  padding-top: 7%;
+}
+
+.computerpic2 img{
+  width: 75%;
+  padding-top: 3%;
+
+}
+}
+
+@media (max-width: 480px) {
+   
+#team article {
+	height: 38vh !important;
+	width: 90% !important;
+		margin-bottom: 0% !important;
+	
+	}
+	.introus {
+	width: 80%;
+	margin-left: 10%;
+    font-size: 1.6rem;
+    }
+
+     #team {
+    padding-bottom: 7%;
+}
+	
+	 .ocupation {
+	font-size: 5vw;
+	line-height: 1rem !important;
+	
+}
+	 #contactform textarea {
+
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    margin-top: 4%;
+    width: 80% !important;
+    padding-left: 0%;
+}
+	
+	#contactform input {
+    margin-left: 10% !important;
+	margin-right: 10% !important;
+    width: 80% !important;
+    padding-top: .5%;
+    padding-bottom: .5%;
+	
+
+}
+	.col{
+  float: left;
+  width: 50% !important ;
+  padding-right: 2.5% !important;
+	 display: inline-block !important;
+
+  
+
+}
+	.pitch p {
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+	.pitch h3{
+		font-size: .7rem;
+	}
+	.info p {
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+	.info h3{
+		font-size: 0.5rem;
+	}
+	.pitch {
+    text-align: center;
+}
+	
+	.title h1{
+		font-size: 2rem;
+		margin-top: 4%;
+	}
+	.title h2{
+		font-size: 1.1rem;
+		    margin-left: 4%;
+	}
+	
+	.computerpic img{
+  width: 90%;
+  padding-top: 7%;
+}
+
+.computerpic2 img{
+  width: 70%;
+  padding-top: 3%;
+
+}
+	.accordionopen {
+    height: 221% !important;
+   
+}
+}
+
+@media (max-width: 320px) {
+	
+	.titleus {
+    width: 100%;
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 14%;
+	}
+.introus {
+	width: 80%;
+	margin-left: 10%;
+    font-size: 1.1rem;
+    }
+}
+
+/*
+/*
+.hidden:hover + .img {
+	display: none !important;
+}
+.img:hover {
+	display: none !important;
+}
+*/
+
+
+/******** mobile ********/
+
+
+/*@media (max-width: 800px) {
+
+.introus{
+  width: 70%;
+  margin-left: 15%;
+  font-family: 'Alegreya Sans SC';
+  font-size: 1.3rem;
+  
+
+
+}
+
+.infous{
+ 
+   width: 90%;
+  margin-left: 5%;
+
+}
+.name{
+  width: 100%;
+  float: none;
+  display: inline;
+
+}
+		
+.name img{
+  width: 100%;
+}
+*/
+
+
+/***** CONTACT *************/
+
+#titlecontact {
+	margin-top: 1%;
+	color: #dadada;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;
+	align-items: center;
+	line-height: 2rem;
+	font-size: 2.6rem;
+	padding-top: 5%;
+}
+
+#contactform {
+	color: white !important;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;
+	align-items: center;
+	background-size: cover;
+}
+
+#contactform input {
+	background-color: #231f20;
+	color: white;
+	outline: none;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: left;
+	border: .05em white solid;
+	font-size: 1rem;
+	font-weight: lighter;
+	line-height: 2rem;
+	padding-left: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 4%;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	padding-top: .5%;
+	padding-bottom: .5%;
+}
+
+#contactform textarea {
+	background-color: #231f20;
+	color: white;
+	outline: none;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	border: .05em white solid;
+	font-size: 1rem;
+	font-weight: lighter;
+	line-height: 2rem;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 4%;
+	width: 40%;
+	padding-left: 1%;
+}
+
+#outputmessage {
+	margin: 0 auto;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	padding-top: 30%;
+	font-size: 3em;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+
+#submit {
+	background: white !important;
+	color: #231f20 !important;
+	text-align: center !important;
+	cursor: pointer;
+	width: 8% !important;
+	margin-left: 60% !important;
+	margin-top: 3% !important;
+	transition: .6s !important;
+	border: none !important;
+	margin-bottom: 5%;
+}
+
+#submit:hover {
+	background: grey !important;
+}
+
+
+/**************** PIMP******************************/
+
+#tools {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+#color-palette {
+	width: 100%;
+	display: inline-block;
+}
+
+.cp-color-picker {
+	position: absolute!important;
+	left: 0!important;
+	top: 0!important;
+}
+
+#truckpimp {
+	margin: 5% 5% 0% 5%;
+	cursor: cell;
+	width: 90%;
+	background-color: #231f20;
+}
+
+.color {
+	border-radius: 50% 50%;
+	border: 0px solid black;
+	width: 5vw;
+	height: 5vw;
+	display: inline-block;
+	margin: 0 0.5% 0 0.5%;
+}
+
+.noir {
+	background-color: black;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.marron {
+	background-color: #5C2121;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.rouge {
+	background-color: #B9121B;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.jaune {
+	background-color: #FFBD07;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.vert {
+	background-color: #13B813;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.bleuC {
+	background-color: #029E9A;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.bleuF {
+	background-color: #0378A6;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.violet {
+	background-color: purple;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.blanc {
+	background-color: white;
+	cursor: url(/../img/eye_dropper.png), auto;
+}
+
+.stars {
+	width: 20%;
+}
+
+.stars img {
+	max-width: 50%;
+	position: absolute;
+}
+
+#smallstar {
+	background-color: transparent;
+}
+
+.forms div {
+	width: 10%;
+	height: 5vh;
+	display: inline-block;
+	margin: 3%;
+}
+
+#starscontainer {}
+
+#pulpocontainer {}
+
+#starscontainer svg {
+	cursor: move;
+}
+
+svg {
+	background-color: #231f20;
+}
+
+.draggable-element {
+	position: absolute;
+	/*width: 30%!important;*/
+}
+
+#star-svg {
+	cursor: move;
+}
+
+object {
+	width: 100px;
+}
+
+#pulpo {
+	background-color: transparent;
+}
+
+.forms {
+	display: inline-block;
+	width: 30%;
+}
+
+
+/**** ************************ Headermobile.HTML****************************/
+
+.button {
+	z-index: 1000;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	margin-top: 2%;
+	-webkit-tap-highlight-color: transparent;
+	margin-left: 5%;
+	/**/
+}
+
+.barra {
+	display: block;
+	width: 27px;
+	height: 2px;
+	background: #cec6c8;
+	transition: .3s;
+	pointer-events: none;
+	margin-left: 3%;
+}
+
+.barra:nth-child(2) {
+	margin: 6px 0;
+	margin-left: 3%;
+}
+
+.open {
+	border-color: #cec6c8;
+}
+
+
+
+.open span {
+	background: #cec6c8;
+	;
+}
+
+.open .barra:first-child {
+	transform: translateY(7.5px) rotate(-45deg);
+}
+
+.open .barra:nth-child(2) {
+	transform: rotate(-45deg);
+	opacity: 0;
+}
+
+.open .barra:last-child {
+	transform: translateY(-7.5px) rotate(-135deg);
+}
+
+.nav {
+	width: 100%;
+	right: 0;
+	background: #231f20;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: .6s;
+	height:50vh;
+	position:absolute;
+	z-index: -1;
+	
+}
+
+.open + .nav {
+	transform: none;
+	opacity: 1;
+}
+
+code {
+	color: transparent;
+	font-size: 0;
+}
+
+.nav li {
+	width: 95%;
+	
+	background: none;
+	text-align: left;
+	margin-left: 2.5%;
+	padding: 3% 0 3% 0;
+	
+}
+
+#headermobile {
+	display: none;
+	position: relative;
+	
+}
+
+.nav a {
+	opacity: 1;
+}
+
+.nav a {
+	text-decoration: none;
+	display: block;
+	
+	
+	font-weight: 100;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: .4rem;
+	
+	width: 100%;
+	letter-spacing: .1rem;
+	font-weight: 100;
+	color: #cec6c8;
+	margin: 0 10% 0 10%;
+	font-size: 3rem;
+}
+
+.nav a:hover {
+	color: #e26b63;
+	text-decoration: none;
+	transition: .6s;
+}
+
+#me a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	width: 100%;
+}
+
+#me {
+	margin-top: 7%;
+}
+
+.projects {
+	margin-top: 5%;
+	position: absolute;
+	z-index: -1;
+	color: white;
+	padding: 0!important;
+	display: block;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	visibility: hidden;
+}
+
+#hover li {
+	display: block;
+}
+
+#hover li a {
+	width: auto;
+}
+
+a:hover {
+	color: pink;
+}
+
+#hoverlinks {
+	cursor: default;
+}
+
+.projects a:hover {
+	color: pink;
+	background-color: black;
+}
+
+.projects li {
+	color: white;
+	display: block!important;
+	width: 100%;
+	z-index: -1;
+}
+
+.nav li{
+	
+}
+
+.accordiontarget a{
+	font-size: 2rem;
+	padding:0;
+	padding-top: 2%;
+	
+
+	
+}
+
+.accordiontarget li{
+padding: 2.5% 0 2.5% 0;
+
+	
+}
+.accordiontarget li:last-child{
+padding-bottom: 0;
+	
+}
+
+
+.accordiontarget {
+    position: absolute;
+    z-index: 0;
+    margin-top: 2%;
+    display: inline-block;
+    bottom: -10vh;
+    top: -0vh;
+    transition-property: height;
+    transition-duration: 0.5s;
+    -webkit-transition-property: top, bottom;
+    -webkit-transition-duration: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+	padding-bottom: 0;
+	
+
+}
+
+.accordionopen {
+    bottom: 40vh !important;
+    display: block;
+    bottom: 40vh !important;
+    top: 4vh;
+    visibility: inherit;
+    opacity: 1;
+    height: 200%;
+	padding-bottom:0;
+	padding-left: 10%;
+}
+
+.accordionmove {
+top: 0px;
+bottom: 5vh;
+transition-property: top, bottom;
+transition-duration: 0.5s;
+-webkit-transition-property: top, bottom;
+-webkit-transition-duration: 0.5s;
+}
+
+.move {
+	top: 16vh;
+	bottom: 100px;
+}
+.projects li a {
+	font-size: 2rem;
+	padding-top: 0%;
+	padding-bottom: 5%;
+	padding-right: 10%;
+	padding-left: 30%;
+	background-color: #231f20;
+	height: auto;
+	z-index: -1;
+}
+
+#projects li a:hover {
+	background-color: black !important;
+}
+
+.menuopen {
+	opacity: 1!important;
+	z-index: 1000;
+	cursor: pointer;
+	visibility: visible;
+}
+
+.menuopen a {
+	opacity: 1!important;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.menuopen li a {
+	opacity: 1!important;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.minitruckmobile img{
+	max-width: 12%!important;
+}
+
+/**** ************************ Headermobile.HTML display****************************/
+
+@media (max-width: 800px) {
+	#headerfull {
+		display: none;
+	}
+	#headermobile {
+		display: inherit;
+	
+		
+	}
+	.wrap{ margin-top: 10%;}
+	#truckwrap{
+		margin-top: 10%;
+	}
+	#truckwrap .community {
+		top: 80%;
+	}
+	
+	.accordionopen {
+    bottom: 40vh !important;
+    display: block;
+    bottom: 40vh !important;
+    top: 58%!important ;
+    visibility: inherit;
+    opacity: 1;
+    height: 300% !important;
+    padding-bottom: 0;
+    padding-left: 10%;
+
+		
+}
+
+ .move{
+    margin-top: 19%;
+}
+	.move:last-child{
+    margin-top: 3%;
+}
+	.nav{
+		height: 85vh !important;
+	}
+	
+}
